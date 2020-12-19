@@ -11,11 +11,11 @@ MainMenu::~MainMenu()
 
 bool MainMenu::start()
 {
-	m_backgroundSprite = kage::TextureManager::getSprite("data/Spacey.jpg");
+	m_backgroundSprite = kage::TextureManager::getSprite("data/Cool.jpg");
 	sf::Vector2u resolution = m_backgroundSprite->getTexture()->getSize();
 	m_backgroundSprite->setScale(float(m_window.getSize().x) / resolution.x, float(m_window.getSize().y) / resolution.y);
 
-	if (!font.loadFromFile("./data/bluehigh.ttf"))
+	if (!font.loadFromFile("./data/High.otf"))
 	{
 		std::cout << "font does not exist!" << std::endl;
 	}
@@ -23,9 +23,9 @@ bool MainMenu::start()
 	for (size_t i = 0; i < TEXTS_ARRAY_SIZE; i++)
 		texts[i].setFont(font);
 
-	texts[0].setString("Start");
-	texts[1].setString("Options");
-	texts[2].setString("Exit");
+	texts[0].setString("START");
+	texts[1].setString("OPTIONS");
+	texts[2].setString("EXIT");
 
 	for (size_t i = 0; i < TEXTS_ARRAY_SIZE; i++)
 	{

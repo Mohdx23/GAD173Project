@@ -4,7 +4,7 @@
 
 #define TEXTS_ARRAY_SIZE 3
 #define LOCAL_TEXT_OFFSET_Y 100
-#define GLOBAL_TEXT_OFFSET_Y 200
+#define GLOBAL_TEXT_OFFSET_Y -70
 
 class SceneManager;
 
