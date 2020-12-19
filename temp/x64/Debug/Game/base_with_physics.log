@@ -1,0 +1,16 @@
+﻿  MainMenu.cpp
+  SceneManager.cpp
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(36,1): warning C4996: 'sf::Text::setColor': was declared deprecated
+C:\Users\Mohammed\Desktop\Kage2D engine\dev\sdk\include\SFML\Graphics\Text.hpp(211): message : see declaration of 'sf::Text::setColor'
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(39,1): warning C4996: 'sf::Text::setColor': was declared deprecated
+C:\Users\Mohammed\Desktop\Kage2D engine\dev\sdk\include\SFML\Graphics\Text.hpp(211): message : see declaration of 'sf::Text::setColor'
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(54,1): warning C4996: 'sf::Text::setColor': was declared deprecated
+C:\Users\Mohammed\Desktop\Kage2D engine\dev\sdk\include\SFML\Graphics\Text.hpp(211): message : see declaration of 'sf::Text::setColor'
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(56,1): warning C4996: 'sf::Text::setColor': was declared deprecated
+C:\Users\Mohammed\Desktop\Kage2D engine\dev\sdk\include\SFML\Graphics\Text.hpp(211): message : see declaration of 'sf::Text::setColor'
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(69,1): warning C4996: 'sf::Text::setColor': was declared deprecated
+C:\Users\Mohammed\Desktop\Kage2D engine\dev\sdk\include\SFML\Graphics\Text.hpp(211): message : see declaration of 'sf::Text::setColor'
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(71,1): warning C4996: 'sf::Text::setColor': was declared deprecated
+C:\Users\Mohammed\Desktop\Kage2D engine\dev\sdk\include\SFML\Graphics\Text.hpp(211): message : see declaration of 'sf::Text::setColor'
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(44,29): warning C4100: 'deltaT': unreferenced formal parameter
+  base_with_physics.vcxproj -> C:\Users\Mohammed\Desktop\Kage2D engine\bin\Game_d.exe

@@ -1,0 +1,4 @@
+﻿  MainMenu.cpp
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(22,29): warning C4100: 'deltaT': unreferenced formal parameter
+C:\Users\Mohammed\Desktop\Kage2D engine\projects\base_with_physics\MainMenu.cpp(32,41): warning C4100: 'm_window': unreferenced formal parameter
+  base_with_physics.vcxproj -> C:\Users\Mohammed\Desktop\Kage2D engine\bin\base_with_physics_d.exe
