@@ -16,7 +16,7 @@ private:
 	SceneManager& m_sceneManager;
 	sf::Font font;
 	sf::Text texts[TEXTS_ARRAY_SIZE];
-
+	sf::Sprite* m_backgroundSprite;
 
 public:
 	MainMenu(sf::RenderWindow& window, SceneManager& sceneManager);
@@ -25,7 +25,6 @@ public:
 	void update(float deltaT);
 	void render();
 	void cleanup();
-
 
 	int selectedItem = 0;
 	bool isKeyReleasedPreviously = true;

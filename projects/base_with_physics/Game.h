@@ -3,7 +3,6 @@
 #include "app.h"
 #include "kage2dutil/physics.h"
 
-
 class Game
 {
 private:

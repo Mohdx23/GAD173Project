@@ -24,13 +24,9 @@ void Game::update(float deltaT)
 	}
 }
 
-
-
 void Game::render()
 {
 	m_window.draw(*frost);
-
-
 }
 
 void Game::cleanup()

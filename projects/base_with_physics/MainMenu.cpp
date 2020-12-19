@@ -1,10 +1,7 @@
 #include "MainMenu.h"
 #include "SceneManager.h"
 
-
-
-MainMenu::MainMenu(sf::RenderWindow& window, SceneManager& sceneManager) :
-	m_window(window), m_sceneManager(sceneManager)
+MainMenu::MainMenu(sf::RenderWindow& window, SceneManager& sceneManager) : m_window(window), m_sceneManager(sceneManager)
 {
 }
 
@@ -12,9 +9,12 @@ MainMenu::~MainMenu()
 {
 }
 
-
 bool MainMenu::start()
 {
+	m_backgroundSprite = kage::TextureManager::getSprite("data/Spacey.jpg");
+	sf::Vector2u resolution = m_backgroundSprite->getTexture()->getSize();
+	m_backgroundSprite->setScale(float(m_window.getSize().x) / resolution.x, float(m_window.getSize().y) / resolution.y);
+
 	if (!font.loadFromFile("./data/bluehigh.ttf"))
 	{
 		std::cout << "font does not exist!" << std::endl;
@@ -32,12 +32,10 @@ bool MainMenu::start()
 		texts[i].setPosition(sf::Vector2f(
 			m_window.getSize().x / 2 - texts[i].getGlobalBounds().width / 2,
 			(m_window.getSize().y / 2 - texts[i].getGlobalBounds().height / 2) + (i * LOCAL_TEXT_OFFSET_Y) + GLOBAL_TEXT_OFFSET_Y));
-		
+
 		texts[i].setColor(sf::Color::Red);
 	}
-	
 	texts[selectedItem].setColor(sf::Color::White);
-
 	return true;
 }
 
@@ -52,8 +50,8 @@ void MainMenu::update(float deltaT)
 
 		for (size_t i = 0; i < TEXTS_ARRAY_SIZE; i++)
 			texts[i].setColor(sf::Color::Red);
-		
-		texts[selectedItem].setColor(sf::Color::White);		
+
+		texts[selectedItem].setColor(sf::Color::White);
 
 		isKeyReleasedPreviously = false;
 	}
@@ -77,7 +75,7 @@ void MainMenu::update(float deltaT)
 	{
 		m_sceneManager.Run(selectedItem);
 	}
-	if (App::isKeyReleased) 
+	if (App::isKeyReleased)
 	{
 		isKeyReleasedPreviously = true;
 	}
@@ -90,6 +88,8 @@ void MainMenu::update(float deltaT)
 
 void MainMenu::render()
 {
+	m_window.draw(*m_backgroundSprite);
+
 	for (size_t i = 0; i < TEXTS_ARRAY_SIZE; i++)
 		m_window.draw(texts[i]);
 }

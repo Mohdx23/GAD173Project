@@ -8,7 +8,7 @@ class OptionsMenu
 {
 private:
 	sf::RenderWindow& m_window;
-	sf::Sprite* cat;
+	sf::Sprite* m_backgroundSprite;
 public:
 	OptionsMenu(sf::RenderWindow& window);
 	 ~OptionsMenu();
